@@ -1,0 +1,1 @@
+# 10) Escribir una función que reciba un numero 'limite' e imprima todos los números primos entre 0 y 'limite'

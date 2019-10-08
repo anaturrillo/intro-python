@@ -1,0 +1,1 @@
+# 6) Escribir una función llamada fizz_buzz que reciba un numero y devuelva fizz si el numero es divisible por 3, buzz si es divisible por 5 y FizzBuzz si es divisible por ambos

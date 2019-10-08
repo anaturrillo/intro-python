@@ -1,0 +1,1 @@
+# 4) Agregarle validaciones al ejercicio anterior
