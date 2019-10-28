@@ -1,18 +1,18 @@
 
 
-def calcularIVA(precio):
+def calcular_iva(precio):
     return precio * 0.21
 
 
-ivaZapatos = calcularIVA(50)
-ivaSombrero = calcularIVA(120)
-ivaAnteojos = calcularIVA(326)
+iva_zapatos = calcular_iva(50)
+iva_sombrero = calcular_iva(120)
+iva_anteojos = calcular_iva(326)
 
 
 
-print(ivaZapatos)
-print(ivaSombrero)
-print(ivaAnteojos)
+print(iva_zapatos)
+print(iva_sombrero)
+print(iva_anteojos)
 
 
 def saludar():
@@ -21,19 +21,19 @@ def saludar():
 print(saludar())
 
 
-def saludarAmigo(nombre):
+def saludar_amigo(nombre):
     print("Hola " + nombre + "!!")
 
-saludarAmigo("Pepe")
+saludar_amigo("Pepe")
 
 
 
-def calcularIVA(precio):
+def calcular_iva(precio):
     return precio * 0.21
 
-print( calcularIVA(25) )
+print( calcular_iva(25) )
 
-def superficieTriangulo(base, altura):
+def superficie_triangulo(base, altura):
     return base * altura / 2
 
 

@@ -5,25 +5,25 @@ def esNotaInvalida(nota):
     if type(nota) != int:
         return {'error': 'La nota tiene que se un numero'}
 
-    notaInt = int(nota)
-    if notaInt < 0 or notaInt > 10:
+    nota_int = int(nota)
+    if nota_int < 0 or nota_int > 10:
         return {'error': 'La nota debe ser de 0 a 10'}
     
-    return {'success': notaInt}
+    return {'success': nota_int}
 
 def recibirNotas():
-    todasLasNotas = []
+    todas_las_notas = []
 
-    while len(todasLasNotas) < 4:
-        notaRecibida = input()
-        notaValidada = esNotaInvalida(notaRecibida) 
+    while len(todas_las_notas) < 4:
+        nota_recibida = input()
+        notaValidada = esNotaInvalida(nota_recibida) 
         
         if 'error' in notaValidada:
             print( notaValidada['error'] )
         else:
-            todasLasNotas.append(notaValidada['success'])
+            todas_las_notas.append(notaValidada['success'])
 
-    return todasLasNotas
+    return todas_las_notas
 
 
 
@@ -53,8 +53,8 @@ def recibirNotas_(notas):
     if len(notas) == 4:
         return notas
     else:
-        notaRecibida = input()
-        notaValidada = esNotaInvalida(notaRecibida)
+        nota_recibida = input()
+        notaValidada = esNotaInvalida(nota_recibida)
         if 'error' in notaValidada:
             print( notaValidada['error'] )
             return recibirNotas_(notas)

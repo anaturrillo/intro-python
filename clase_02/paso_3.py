@@ -1,21 +1,21 @@
-def solicitarNotas():
-    todasLasNotas = []
+def solicitar_notas():
+    todas_las_notas = []
 
-    while len(todasLasNotas) < 4:
-        notaRecibida = input()
+    while len(todas_las_notas) < 4:
+        nota_recibida = input()
         
-        if type(notaRecibida) != int:
+        if type(nota_recibida) != int:
             print('La nota tiene que se un numero')
         else: 
-            nota = int(notaRecibida)
+            nota = int(nota_recibida)
             if nota < 0 or nota > 10:
                 print('La nota debe ser de 0 a 10')
             else:
-                todasLasNotas.append(nota)
-    return todasLasNotas
+                todas_las_notas.append(nota)
+    return todas_las_notas
 
 def main():
-    notas = solicitarNotas()
+    notas = solicitar_notas()
     sumatoria = 0
 
     for i in notas:

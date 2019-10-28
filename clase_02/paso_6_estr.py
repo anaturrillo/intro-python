@@ -1,23 +1,23 @@
-todasLasNotas = []
+todas_las_notas = []
 
-while len(todasLasNotas) < 4:
-    notaRecibida = input()
+while len(todas_las_notas) < 4:
+    nota_recibida = input()
     
-    if type(notaRecibida) != int:
+    if type(nota_recibida) != int:
         print('La nota tiene que se un numero')
     else: 
-        nota = int(notaRecibida)
+        nota = int(nota_recibida)
         if nota < 0 or nota > 10:
             print('La nota debe ser de 0 a 10')
         else:
-            todasLasNotas.append(nota)
+            todas_las_notas.append(nota)
 
 sumatoria = 0
 
-for i in todasLasNotas:
+for i in todas_las_notas:
     sumatoria += i
 
-promedio = sumatoria / len(todasLasNotas)
+promedio = sumatoria / len(todas_las_notas)
 
 print('el promedio /10 es ' + str(promedio))
 
@@ -25,26 +25,26 @@ print('Quiere volver a ingresar las notas')
 respuesta = input()
 
 if respuesta == 'si':
-    todasLasNotas_2 = []
+    todas_las_notas_2 = []
 
-    while len(todasLasNotas_2) < 4:
-        notaRecibida_2 = input()
+    while len(todas_las_notas_2) < 4:
+        nota_recibida_2 = input()
         
-        if type(notaRecibida_2) != int:
+        if type(nota_recibida_2) != int:
             print('La nota tiene que se un numero')
         else: 
-            nota_2 = int(notaRecibida_2)
+            nota_2 = int(nota_recibida_2)
             if nota_2 < 0 or nota_2 > 10:
                 print('La nota debe ser de 0 a 10')
             else:
-                todasLasNotas_2.append(nota_2)
+                todas_las_notas_2.append(nota_2)
     
     sumatoria_2 = 0
 
-    for i in todasLasNotas_2:
+    for i in todas_las_notas_2:
         sumatoria_2 += i
 
-    promedio_2 = sumatoria_2 / len(todasLasNotas_2)
+    promedio_2 = sumatoria_2 / len(todas_las_notas_2)
 
     print('el promedio /10 es ' + str(promedio_2))
 else:

@@ -5,11 +5,11 @@ nota4 = int(input())
 
 notas = [nota, nota2, nota3, nota4]
 
-todasLasNotas = []
+todas_las_notas = []
 
-while len(todasLasNotas) < 4:
-    notaRecibida = int(input())
-    todasLasNotas.append(nota)
+while len(todas_las_notas) < 4:
+    nota_recibida = int(input())
+    todas_las_notas.append(nota)
 
 
 

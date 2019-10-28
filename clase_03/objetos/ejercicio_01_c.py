@@ -18,13 +18,13 @@ class Programa:
     def iniciar(self):
         orden = ''
         while orden != 'salir':
-            orden = self.pedirOrden()
-            self.ejecutarOrden(orden)
+            orden = self.pedir_orden()
+            self.ejecutar_orden(orden)
 
-    def pedirOrden(self):
+    def pedir_orden(self):
         return input("Introduzca orden: ")
 
-    def ejecutarOrden(self, orden):
+    def ejecutar_orden(self, orden):
         if orden == 'click':
             self.lapicera.click()
         else:

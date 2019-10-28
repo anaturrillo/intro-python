@@ -1,26 +1,26 @@
 
-def notaEsInvalida(nota):
+def nota_es_invalida(nota):
     if type(nota) != int:
         return 'La nota tiene que se un numero'
     
-    notaInt = int(nota)
-    if notaInt < 0 or notaInt > 10:
+    nota_int = int(nota)
+    if nota_int < 0 or nota_int > 10:
         return 'La nota debe ser de 0 a 10'
 
-def solicitarNotas():
-    todasLasNotas = []
+def solicitar_notas():
+    todas_las_notas = []
 
-    while len(todasLasNotas) < 4:
-        notaRecibida = input()
+    while len(todas_las_notas) < 4:
+        nota_recibida = input()
         
-        if notaEsInvalida(notaRecibida):
-            print( notaEsInvalida(notaRecibida) )
+        if nota_es_invalida(nota_recibida):
+            print( nota_es_invalida(nota_recibida) )
         else:
-            todasLasNotas.append(int(notaRecibida))
-    return todasLasNotas
+            todas_las_notas.append(int(nota_recibida))
+    return todas_las_notas
 
 def main():
-    notas = solicitarNotas()
+    notas = solicitar_notas()
     sumatoria = 0
 
     for i in notas:
