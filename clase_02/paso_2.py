@@ -2,7 +2,7 @@ def main():
     todasLasNotas = []
 
     while len(todasLasNotas) < 4:
-        notaRecibida = input()
+        notaRecibida = int(input())
         
         if type(notaRecibida) != int:
             print('La nota tiene que se un numero')
