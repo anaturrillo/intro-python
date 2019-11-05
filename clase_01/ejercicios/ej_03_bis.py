@@ -33,4 +33,4 @@ def operar():
     
     return operaciones[operacion](num_1_int, num_2_int)
 
-print(operar())
+print( operar() )

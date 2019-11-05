@@ -22,4 +22,4 @@ def operar():
     if operacion == "/":
         return num_1_int / num_2_int
     
-print(operar())
+print( operar() )

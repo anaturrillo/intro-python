@@ -22,4 +22,4 @@ def operar():
     else:
         return 'La operacion es inválida'
         
-print(operar())
+print( operar() )

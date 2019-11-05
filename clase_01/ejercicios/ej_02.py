@@ -11,3 +11,5 @@ def sumar():
     num_2_int = int(num_2)
 
     return num_1_int + num_2_int
+
+print( sumar() )
