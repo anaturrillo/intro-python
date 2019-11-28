@@ -7,3 +7,6 @@ def calcular():
 
 miCalculo = calcular()
 miCalculo(5)
+
+
+

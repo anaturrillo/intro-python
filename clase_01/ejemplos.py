@@ -35,8 +35,3 @@ print( calcular_iva(25) )
 
 def superficie_triangulo(base, altura):
     return base * altura / 2
-
-
-
-   
-
